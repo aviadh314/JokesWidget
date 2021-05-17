@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rs_dark"
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/rlWidget"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:theme="@style/ThemeOverlay.JokesWidget.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/tvJokeSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:lines="2"
+        android:gravity="center"
+        android:text="@string/loading"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/tvJokePunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:lines="2"
+        android:gravity="center"
+        android:text="@string/click_for_punchline"
+        android:textColor="@color/light_blue_900"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/tvRandomJoke"
+        android:theme="@style/Theme.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="6dp"
+        android:background="@drawable/round_frame"
+        android:textSize="14sp"
+        android:text="@string/random_joke"
+        />
+</LinearLayout>

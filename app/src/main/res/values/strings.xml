@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JokesWidget</string>
+    <string name="configure">Select widget background</string>
+    <string name="add_widget">Add widget</string>
+    <string name="loading">Loading a joke…</string>
+    <string name="black">Black</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="click_for_punchline">click for punchline</string>
+    <string name="random_joke">Random Joke</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/configure" />
+    <TableRow
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btDarkMode"
+            android:theme="@style/Theme.AppCompat"
+            android:background="@drawable/rs_dark"
+            android:layout_height="match_parent"
+            android:text="@string/dark"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+        <Button
+            android:id="@+id/btLightMode"
+            android:theme="@style/Theme.AppCompat"
+            android:background="@drawable/rs_light"
+            android:layout_height="match_parent"
+            android:text="@string/light"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="2dp"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btAddWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_widget" />
+
+</LinearLayout>
