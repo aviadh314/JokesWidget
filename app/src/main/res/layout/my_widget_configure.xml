@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
     <TextView
@@ -41,9 +42,11 @@
 
     <Button
         android:id="@+id/btAddWidget"
+        android:theme="@style/Theme.AppCompat.Light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:layout_marginTop="8dp"
         android:text="@string/add_widget" />
-
 </LinearLayout>
