@@ -67,14 +67,18 @@ public class MyWidget extends AppWidgetProvider {
 
     private static void setRandomJoke(RemoteViews remoteViews, Context context,
         AppWidgetManager appWidgetManager, ComponentName jokeWidget){
+
+        remoteViews.setTextViewText(R.id.tvJokeSet, context.getString(R.string.loading));
+        remoteViews.setTextViewText(R.id.tvJokePunch, context.getString(R.string.click_for_punchline));
+        appWidgetManager.updateAppWidget(jokeWidget, remoteViews);
+
         jokesClient.fetchJokeFromServer(context, isSuccess -> {
             if (!isSuccess){
-                randJoke = new Pair<>("Loading...", "");
+                randJoke = new Pair<>(context.getString(R.string.loading_failed), "");
             } else {
                 randJoke = jokesClient.joke();
             }
             remoteViews.setTextViewText(R.id.tvJokeSet, randJoke.first);
-            remoteViews.setTextViewText(R.id.tvJokePunch, context.getString(R.string.click_for_punchline));
             appWidgetManager.updateAppWidget(jokeWidget, remoteViews);
         });
     }

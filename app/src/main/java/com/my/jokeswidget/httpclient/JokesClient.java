@@ -25,7 +25,10 @@ public class JokesClient {
                     }
                     callback.onSuccess(true);
                 },
-                error -> callback.onSuccess(false));
+                error -> {
+                    System.out.println(error);
+                    callback.onSuccess(false);
+        });
 
         VolleyRQSingleton.getInstance(context).addToRequestQueue(jsonRequest);
     }

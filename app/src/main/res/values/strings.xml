@@ -2,7 +2,9 @@
     <string name="app_name">JokesWidget</string>
     <string name="configure">Select widget background</string>
     <string name="add_widget">Add widget</string>
-    <string name="loading">Loading a joke…</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_failed">"Failed to load joke, Please retry!"</string>
+
     <string name="black">Black</string>
     <string name="dark">Dark</string>
     <string name="light">Light</string>
